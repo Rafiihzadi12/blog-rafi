@@ -40,6 +40,9 @@
                 <td>
                     <a href="{{ url('admin/edit-category'.$item->id) }}" class="btn btn-success">Edit</a>
                 </td>
+                <td>
+                <a href="{{ url('admin/delete-category'.$item->id) }}" class="btn btn-danger">Delete</a>
+                </td>
             </tr>
             @endforeach
         </tbody>

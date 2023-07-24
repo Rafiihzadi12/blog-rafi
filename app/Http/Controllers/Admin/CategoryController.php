@@ -6,12 +6,14 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use Illuminate\Requests\Admin\CategoryFormRequest;
 
 class CategoryController extends Controller
 {
   public function index()
   {
+    $category = Category::all();
     return view('admin.category.index', compact('category'));
   }
 
@@ -69,6 +71,9 @@ class CategoryController extends Controller
     if($data->hasfile('image')){
 
       $destinattion = 'uploads/category/' .$category->image;
+      if(File::exists($destinattion)){
+        File::delete($destinattion);
+      }
 
       $file = $data->file('image');
       $filename = time() . '.' . $file->getClienOriginalExtension();
@@ -88,6 +93,25 @@ class CategoryController extends Controller
 
     return redirect('admin/category')->with('message','Category Updated Successfully');
 
+  }
+
+  public function destroy($category_id)
+  {
+    $category = Category::find($category_id);
+    if($category)
+    {
+      $destinattion = 'upload/category/'.$category->image;
+      if(File::exists($destinattion)){
+        File::delete($destinattion);
+        
+      }
+      $category->delete();
+      return redirect('admin/category')->with('message','Category Deleted Successfully');
+    }
+    else
+    {
+      return redirect('admin/category')->with('message','No Category Id Found');
+    }
   }
   
   
