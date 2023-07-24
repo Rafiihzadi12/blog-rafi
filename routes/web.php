@@ -25,8 +25,14 @@ Route::prefix('admin')->group(function (){
  Route::get('delete-category/{category_id}', [App\Http\Controllers\Admin\CategoryController::class,'destroy']);
 
  Route::get('posts', [App\Http\Controllers\Admin\PostController::class,'index']);
+ Route::get('add-post', [App\Http\Controllers\Admin\PostController::class,'create']);
+
 
 
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

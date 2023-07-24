@@ -20,12 +20,12 @@
                     <a class="nav-link" href="{{url('admin/category') }}">View Category</a>
                 </nav>
             </div>
-            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-toggle>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePost" aria-expanded=>
             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
             Pages
             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></div>
         </a>
-        <div class="collapse" id="collapse-Pages" aria-labelledby="headingTwo" data-bs-toggle>
+        <div class="collapse" id="collapse-Post" aria-labelledby="headingTwo" data-bs-toggle>
             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordi">
                 <a class="nav-link collapse" href="#" data-bs-toggle="collapsed">
                 Authentication
