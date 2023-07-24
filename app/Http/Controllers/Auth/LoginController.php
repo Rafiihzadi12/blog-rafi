@@ -12,14 +12,8 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
-    protected $redirectTo = '/home';
-    protected function redirectTo()
-    {
-        if (auth()->user()->role == 'admin') {
-            return '/admin';
-        }
-        return '/home';
-    }
+    protected $redirectTo = '/admin';
+
 
     public function __construct()
     {
