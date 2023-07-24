@@ -28,11 +28,13 @@ Route::prefix('admin')->group(function (){
  Route::get('add-post', [App\Http\Controllers\Admin\PostController::class,'create']);
 
 
-
 });
 
 
 
 Auth::routes();
 
+<<<<<<< HEAD
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+=======
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->nam
