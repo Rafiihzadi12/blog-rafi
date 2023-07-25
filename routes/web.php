@@ -30,4 +30,8 @@ Route::prefix('admin')->group(function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+<<<<<<< HEAD
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+=======
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+>>>>>>> 569a12d1aba9fd5a0c34fa1191c9218a171d8d9a
