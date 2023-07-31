@@ -709,7 +709,7 @@
                             <img src="images/profile/pic1.jpg" alt="">
                             <div class="d-flex align-items-center sidebar-info">
                                 <div>
-                                    <span class="font-w400 d-block">Franklin Jr</span>
+                                    <span class="font-w400 d-block">Rafi ihza</span>
                                     <small class="text-end font-w400">Superadmin</small>
                                 </div>
                                 <i class="fas fa-chevron-down"></i>
