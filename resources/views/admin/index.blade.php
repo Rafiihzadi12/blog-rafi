@@ -163,7 +163,7 @@
                             <img src="" alt="">
                             <div class="d-flex align-items-center sidebar-info">
                                 <div>
-                                    <span class="font-w400 d-block">Franklin Jr</span>
+                                    <span class="font-w400 d-block">Rafi Ihza</span>
                                     <small class="text-end font-w400">Superadmin</small>
                                 </div>
                             </div>
@@ -182,6 +182,7 @@
                             <span class="nav-text">Product</span>
                         </a>
                     </li>
+                    
 
                 </ul>
             </div>
@@ -195,11 +196,32 @@
             Content body start
         ***********************************-->
         <div class="content-body">
+        <div class="card card-primary">
+    <div class="card-header">
             <!-- row -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="job-icon pb-4 d-flex justify-content-between">
                         <div>
+                        <div class="card-body">
+        <div style="margin-bottom: 20px">
+            <a href="{{ url('/create-buku')}}" class="btn btn-primary btn-flat">
+                <i class="fa fa-plus-circle"></i> Tambah Data
+            </a>
+            <div style="overflow: auto">
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <th style="text-align:center;">No</th>
+                    <th style="text-align:center;">Judul Buku</th>
+                    <th style="text-align:center;">Tahun Terbit</th>
+                    <th style="text-align:center;">Penulis</th>
+                    <th style="text-align:center;">Penerbit</th>
+                    <th style="text-align:center">Kategori</th>
+                    <th width="200px" style="text-align: center;">Sinopsis</th>
+                    <th style="text-align:center;">Sampul</th>
+                    <th width="250px" style="text-align: center;">Action</th>
+                </tr>
+                
                         </div>
                     </div>
                 </div>
