@@ -1,6 +1,9 @@
-<footer class="main-footer">
-  <div class="float-right d-none d-sm-inline">
-    {{ site.version }}
-  </div>
-  <strong>Copyright &copy; 2014-{{ site.time | date: '%Y' }} <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+<footer>
+    <div class="footer clearfix mb-0 text-muted">
+        <div class="float-start">
+            <p>2023 &copy; Mazer</p>
+        </div>
+    </div>
 </footer>
+
+<h1></h1>
