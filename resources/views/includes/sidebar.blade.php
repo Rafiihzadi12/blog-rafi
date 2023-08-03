@@ -43,7 +43,7 @@
                         </li>
 
                         <li class="sidebar-item  ">
-                            <a href="" class='sidebar-link'>
+                            <a href="{{ route('index_product') }}" class='sidebar-link'>
                                 <i class="bi bi-box-seam-fill"></i>
                                 <span>Product</span>
                             </a>

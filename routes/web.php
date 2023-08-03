@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -34,6 +35,4 @@ Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 
 
 //product
-Route::get('/product', [ProductController::class, 'index'])->name('product.index');
-Route::get('/create-product', [ProductController::class, 'create']);
-Route::resource('products', 'ProductController');
+Route::get('/product', [ProductController::class, 'index'])->name('index_product');
