@@ -16,4 +16,9 @@ class Product extends Model
         'image',
         'stock'
     ];
+    
+    public function book()
+    {
+        return $this->hasMany('book::class');
+    }
 }

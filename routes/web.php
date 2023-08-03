@@ -3,6 +3,8 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Product;
+
 
 
 
@@ -36,3 +38,6 @@ Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 
 //product
 Route::get('/product', [ProductController::class, 'index'])->name('index_product');
+Route::get('/create-product', [ProductController::class, 'create']);
+Route::post('/store-product', [ProductController::class, 'store'])->name('product.store');
+
